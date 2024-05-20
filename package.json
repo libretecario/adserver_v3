@@ -1,0 +1,28 @@
+{
+  "name": "@sulvo/adserver",
+  "version": "3.0.0",
+  "description": "Sulvo adserver",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "prettier --write .",
+    "predictor:deploy:production": "wrangler -c ./predictor/wrangler.toml deploy",
+    "predictor:deploy:staging": "wrangler -e staging -c ./predictor/wrangler.toml deploy",
+    "predictor:dev": "wrangler -c ./predictor/wrangler.toml dev"
+  },
+  "main": "main.js",
+  "keywords": [
+    "adserver",
+    "adops",
+    "ads"
+  ],
+  "author": "Arative LLC",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "prettier": "^3.2.5",
+    "wrangler": "^3.57.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,13 @@
+name = "predictor"
+main = "src/main.py"
+compatibility_flags = ["python_workers"]
+compatibility_date = "2023-12-18"
+account_id = "c36bd883186576fe1164795b47f167a7"
+workers_dev = false
+routes = [{ pattern = "live.demand.supply/cpi/*", zone_name = "demand.supply" }]
+kv_namespaces = [{ binding = "KV", id = "40d9fd349d954df7a920b00065bdc240", preview_id = "0999b11a58b047d6b693f5d4c67880cb" }]
+
+[env.staging]
+workers_dev = true
+routes = [{ pattern = "staging.live.demand.supply/cp/*", zone_name = "demand.supply" }]
+kv_namespaces = [{ binding = "KV", id = "0999b11a58b047d6b693f5d4c67880cb" }]

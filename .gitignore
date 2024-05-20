@@ -1,0 +1,29 @@
+# Node dependencies
+node_modules/
+test_model/
+*/.wrangler
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+.history
+/dist
+npm-debug.log*
+coverage/
+*.git-crypt.key
+mongocryptd.pid
+.vscode/
+tmp/
+.idea/
+staging-server-service-account-key.json
